@@ -1,1 +1,6 @@
-const defaultBPM = 120;
+let defaultBPM = 120;
+const main = document.getElementById('alphaTab');
+const songSelector = document.getElementById('songSelect')';
+const trackSelector = document.getElementById('trackSelect');
+const bpmSelector = document.getElementById('bpmSelect');
+const PPButton = document.getElementById('playbutton');
