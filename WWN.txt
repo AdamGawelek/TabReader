@@ -1,3 +1,4 @@
 - Wybor piosenki
 - wybor instrumentu w tej pisoence
 - mozliwosc zmiany tempa (interface, w ktorym 100% = piosenka bpm, mozna przesowac co skaluje bpm odnosnie tego bpm piosenki)
+- interface tabow
