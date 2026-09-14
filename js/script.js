@@ -1,0 +1,1 @@
+const defaultBPM = 120;
