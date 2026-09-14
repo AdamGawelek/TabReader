@@ -9,4 +9,5 @@ const PPButton = document.getElementById('playbutton');
 
 // Zdeklarowanie AlphaTab API
 
-const api = new.AlphaTab
+const api = new alphaTab.AlphaTabApi(main, {}
+                                     );
