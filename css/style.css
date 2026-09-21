@@ -1,3 +1,134 @@
 *{
     margin: 0;
 }
+
+body{
+    background-image: url(manualidades.jpeg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.calosc{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.boczeklewy{
+    margin-top: 20px;
+    width: 25%;
+    height: 900px;
+    background-color: rgba(245, 245, 220, 0.9);
+    position: relative;
+}
+
+.boczekprawy{
+    width: 60%;
+}
+
+header{
+    background-color: rgba(245, 245, 220, 0.9);
+    height: 100px;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blinkie{
+    width: 600px;
+    height: auto;
+}
+
+.jeden{
+    /* background-color: rgba(245, 245, 220, 0.9); */
+    height: 50px;
+    margin: 20px;
+}
+
+.dwa{
+    background-color: rgba(245, 245, 220, 0.9);
+    height: 320px;
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.trzy{
+    background-color: rgba(245, 245, 220, 0.9);
+    height: 250px;
+    margin: 20px;
+    position: relative;
+}
+
+footer{
+    background-color: rgba(245, 245, 220, 0.9);
+    height: 80px;
+    margin: 20px;
+}
+
+.a{
+    margin: 20px;
+    padding: 5px;
+    border: solid, white, 5px;
+    background-color: rgb(250, 250, 238);
+}
+
+.b{
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid, white, 5px;
+    background-color: rgb(250, 250, 238);
+    margin: 20px;
+}
+
+ul{
+    text-align: left;
+    padding-left: 35px;
+    padding-right: 25px;
+}
+
+.md{
+    width: 250px;
+    height: auto;
+}
+
+.mikugitara{
+    position: absolute;
+    left: -70px;
+    bottom: -60px;
+}
+
+.jeden{
+    position: relative;
+}
+
+.mikua{
+    height: 130px;
+    width: auto;
+    position: absolute;
+    right: -60px;
+    bottom: -60px;
+}
+
+.radio{
+    height: 100px;
+    width: auto;
+    position: absolute;
+    left: -30px;
+    top: -80px;
+}
+
+.ibuki{
+    position: absolute;
+    right: -100px;
+    bottom: -30px;
+}
+
+.x{
+    height: 300px;
+    width: auto;
+}
