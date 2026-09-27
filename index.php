@@ -31,7 +31,7 @@ $result = mysqli_query($conn, $sql);
         }
     </style>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
 
@@ -84,6 +84,6 @@ $result = mysqli_query($conn, $sql);
         </div>
     </footer>
 
-    <script src="js/js.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
