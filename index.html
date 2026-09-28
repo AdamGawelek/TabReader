@@ -1,89 +1,54 @@
-<?php
-// Połączenie z bazą danych
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$db = 'tabulatory_db';
-$conn = mysqli_connect($host, $user, $pass, $db);
-$sql = "SELECT * FROM songs";
-$result = mysqli_query($conn, $sql);
-?>
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Odtwarzacz Tabulatur</title>
-    <!-- Skrypt AlphaTab -->
-    <script src="https://cdn.jsdelivr.net/npm/@coderline/alphatab@latest/dist/alphaTab.min.js"></script>
-    
-    <!-- Wymuszenie ładowania czcionki Bravura -->
-    <style>
-        @font-face {
-            font-family: 'Bravura';
-            src: url('https://cdn.jsdelivr.net/npm/@coderline/alphatab@latest/dist/font/bravura/Bravura.woff2') format('woff2'),
-                 url('https://cdn.jsdelivr.net/npm/@coderline/alphatab@latest/dist/font/bravura/Bravura.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        .at-surface, .at-surface * {
-            font-family: Bravura, alphaTab, sans-serif !important;
-        }
-    </style>
-
-    <link rel="stylesheet" href="css/stylowo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <div class="header-title">Tab Player</div>
-        <div class="song-details">
-            <h1 id="titleText">Wybierz piosenkę</h1>
-            <p id="artistText">-</p>
-        </div>
-        <div>
-            <select id="songSelect">
-                <?php
-                if ($result && mysqli_num_rows($result) > 0) {
-                    while($row = mysqli_fetch_assoc($result)) {
-                        echo '<option value="' . $row['file_path'] . '" data-title="' . $row['title'] . '" data-bpm="' . ($row['bpm'] ?? 120) . '">' . $row['title'] . '</option>';
-                    }
-                }
-                ?>
-            </select>
-        </div>
-    </header>
-
-    <!-- Main -->
-    <div class="main-container">
-        <div class="tab-area">
-            <div id="alphatab"></div>
-        </div>
-        <div class="sidebar">
-            <h3>Ścieżki</h3>
-            <ul class="track-list" id="trackList">
-                <li>Brak ścieżek</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Footer Control -->
-    <footer>
-        <button class="btn-play" id="playBtn">Play / Pause</button>
-
-        <div class="speed-box">
-            <span id="bpmText">120 BPM</span>
-            <input type="range" id="speedRange" min="0.25" max="1.5" step="0.05" value="1">
-            <span id="percentText">100%</span>
-        </div>
-
-        <div>
-            <button class="btn-option" id="countInBtn">Count In</button>
-            <button class="btn-option" id="metronomeBtn">Metronom</button>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+    <section class="calosc">
+        <section class="boczeklewy">        
+            <section class="a">
+                <img src="1547486eacc7713bc0ca598fd191953f.jpg" alt="musztardowy duet" class="md">
+                <p>⋆⁺₊⋆ ━━━⊱༒︎ • ༒︎⊰━━━ ⋆⁺₊⋆</p>
+            </section>
+            <section class="b">
+                <p>╭───────────────.★..─╮</p>
+                <p>Legenda:</p>
+                <ul>
+                    <li>0 - szarpnij pustą strunę</li>
+                    <li>1-24 - wciśnij strunę na progu i szarpnij</li>
+                    <li>h (hammer-on) - uderz w wyższy próg bez szarpania</li>
+                    <li>p (pull-off) - zdejmij palec, by odsłonić niższy próg</li>
+                    <li>b (bend) - podciągnij strunę w górę</li>
+                    <li>a/b / a\b (slide) - przesuń palec z progu a do b</li>
+                    <li>~ (vibrato) - zadrżyj struną</li>
+                </ul>
+                <p>╰─..★.───────────────╯</p>
+            </section>
+            <section class="c"></section>
+            <section class="d"></section>
+            <img src="6bcef499eef7277d6577284261bb053f.gif" alt="miku z gitarkom" class="mikugitara">
+        </section>
+        <section class="boczekprawy">
+            <header>
+                <img class="blinkie" src="blinkiesCafe-x1.gif" alt="Guitar tab reader">
+            </header>
+            <main>
+                <section class="jeden">
+                    <img src="8e5687cfb472561314d1eb6edd2e7b87.gif" alt="mikua" class="mikua">
+                </section>
+                <section class="dwa"> <!-- sekcja na taby, to jest z buttonem albo inputem??? zeby zrobic cos w sylu winamp type shit czy cos -->
+                    <img src="Screenshot_20260921_203342_Gallery.jpg" alt="" class="x"> <!--  placeholder -->
+                </section>  
+                <section class="trzy"> <!-- tu jak cos cos zrobie nie zostawie pusto -->
+                    <img src="8a1d1d940ff2231df006f48c2518ceb1.gif" alt="radio" class="radio">
+                    <img src="pobierz.gif" alt="ibuki" class="ibuki">
+                </section> 
+            </main>
+            <footer></footer>
+        </section>
+    </section>
 </body>
 </html>
