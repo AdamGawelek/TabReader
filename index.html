@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Tab Reader</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- alphatab skrypt -->
+    <script src="https://cdn.jsdelivr.net/npm/@coderline/alphatab@latest/dist/alphaTab.min.js"></script>
+</head>
+<body>
+
+    <section class="calosc">
+
+        <!-- lewe okno -->
+        <section class="boczeklewy">        
+            <section class="a">
+                <img src="img/duet-art.jpg" alt="musztardowy duet" class="md">
+                <p>⋆⁺₊⋆ ━━━⊱༒︎ • ༒⊰━━━ ⋆⁺₊⋆</p>
+            </section>
+
+            <section class="b">
+                <p>╭───────────────.★..─╮</p>
+                <p>Legenda:</p>
+                <ul>
+                    <li>0 - szarpnij pustą strunę</li>
+                    <li>1-24 - wciśnij strunę na progu i szarpnij</li>
+                    <li>h (hammer-on) - uderz w wyższy próg bez szarpania</li>
+                    <li>p (pull-off) - zdejmij palec, by odsłonić niższy próg</li>
+                    <li>b (bend) - podciągnij strunę w górę</li>
+                    <li>a/b / a\b (slide) - przesuń palec z progu a do b</li>
+                    <li>~ (vibrato) - zadrżyj struną</li>
+                </ul>
+                <p>╰─..★.───────────────╯</p>
+            </section>
+
+            <section class="c">
+                <div class="tracks-container">
+                    <h3>Ścieżki / Instrumenty</h3>
+                    <ul id="trackList" class="track-list"></ul>
+                </div>
+            </section>
+
+            <section class="d"></section>
+
+            <img src="img/miku-guitar.gif" alt="miku z gitarkom" class="mikugitara">
+        </section>
+
+        <!-- prawe okno -->
+        <section class="boczekprawy">
+            <header>
+                <img class="blinkie" src="img/header-banner.gif" alt="Guitar tab reader">
+            </header>
+
+            <main>
+                <section class="jeden">
+                    <div class="song-info">
+                        <span id="titleText" class="title-text">Upuść plik Guitar Pro...</span>
+                        <span id="artistText" class="artist-text">Brak wykonawcy</span>
+                    </div>
+                    <img src="img/miku-chibi.gif" alt="mikua" class="mikua">
+                </section>
+
+                <!-- kontener z taby (mozna rozciagac myszka) -->
+                <section class="dwa" id="dropZone">
+                    <div id="dragOverlay" class="drag-overlay">
+                        <span>Upuść plik .gp3, .gp4, .gp5, .gpx tutaj!</span>
+                    </div>
+                    <div class="tab-area">
+                        <div id="alphatab"></div>
+                    </div>
+                </section>  
+
+                <!-- grajek dół -->
+                <section class="trzy">
+                    <img src="img/radio-boombox.gif" alt="radio" class="radio">
+                    <img src="img/ibuki-chibi.gif" alt="ibuki" class="ibuki">
+
+                    <div class="winamp-player">
+                        <div class="player-controls">
+                            <button id="playBtn" class="retro-btn play-btn">▶ PLAY / PAUSE</button>
+                            <label for="fileInput" class="retro-btn file-btn">📁 OTWÓRZ PLIK</label>
+                            <input type="file" id="fileInput" accept=".gp,.gp3,.gp4,.gp5,.gpx" style="display: none;">
+                        </div>
+
+                        <div class="spweed-controls">
+                            <label for="speedRange">Tempo: <span id="bpmText">120 BPM</span> (<span id="percentText">100%</span>)</label>
+                            <input type="range" id="speedRange" min="0.25" max="2.0" step="0.05" value="1.0">
+                        </div>
+
+                        <div class="toggle-controls">
+                            <button id="metronomeBtn" class="retro-btn toggle-btn">🔔 Metronom</button>
+                            <button id="countInBtn" class="retro-btn toggle-btn">🥁 Odliczanie</button>
+                        </div>
+                    </div>
+                </section> 
+            </main>
+
+            <footer></footer>
+        </section>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
