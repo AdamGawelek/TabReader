@@ -380,7 +380,7 @@ ul {
     position: absolute;
     height: 150px;
     width: auto;
-    right: -30px;
+    right: -50px;
     transform: scaleX(-1);
     bottom: -15px;
 }
