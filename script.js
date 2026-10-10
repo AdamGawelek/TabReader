@@ -170,13 +170,13 @@ const myszka = {
 
 function kocielapki(){
     if(myszka.lewy && myszka.prawy){
-        img.src = '1000008141.png';
+        img.src = 'img/1000008141.png';
     } else if (myszka.lewy){
-        img.src = '1000008139.png';
+        img.src = 'img/1000008139.png';
     } else if (myszka.prawy){
-        img.src = '1000008138.png';
+        img.src = 'img/1000008138.png';
     } else {
-        img.src = '1000008140.png';
+        img.src = 'img/1000008140.png';
     }
 
     //console.log("Aktualny src to:", img.src);
